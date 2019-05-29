@@ -12,9 +12,9 @@
 <script class='remove'>
   var respecConfig = {
     // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
-    specStatus: "CSPRD",
-    thisVersion : "http://docs.oasis-open.org/oslc-domains/am/v2.1/csprd01/part2-architecture-management-vocab/am-v2.1-csprd01-part2-architecture-management-vocab.html",
-    latestVersion : "http://docs.oasis-open.org/oslc-domains/am/v2.1/am-v2.1-part2-architecture-management-vocab.html",
+    specStatus: "CS",
+    thisVersion : "http://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/cs01/part2-architecture-management-vocab/oslc-am-v2.1-cs01-part2-architecture-management-vocab.html",
+    latestVersion : "http://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/oslc-am-v2.1-part2-architecture-management-vocab.html",
     prevVersion : "",
 
     // the specification's short name, as in http://www.w3.org/TR/short-name/
@@ -31,7 +31,7 @@
     // subtitle   :  "an excellent document",
 
     // if you wish the publication date to be other than the last modification, set this
-    // publishDate:  "2009-08-06",
+    publishDate:  "2018-10-09",
 
     // if the specification's copyright date is a range of years, specify
     // the start date here:
@@ -99,8 +99,8 @@
 
     // Other parts of multi-part spec
     additionalArtifacts : [
-      { title: "OSLC Architecture Management Version 2.1. Part 1: Specification", href: "http://docs.oasis-open.org/oslc-domains/am/v2.1/csprd01/part1-architecture-management/am-v2.1-csprd01-part1-architecture-management.html" },
-      { title: "OSLC Architecture Management Version 2.1. Part 2: Vocabulary (this document)", href: "http://docs.oasis-open.org/oslc-domains/am/v2.1/csprd01/part2-architecture-management-vocab/am-v2.1-csprd01-part2-architecture-management-vocab.html" },
+      { title: "OSLC Architecture Management Version 2.1. Part 1: Specification", href: "http://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/cs01/part1-architecture-management/oslc-am-v2.1-cs01-part1-architecture-management.html" },
+      { title: "OSLC Architecture Management Version 2.1. Part 2: Vocabulary (this document)", href: "http://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/cs01/part2-architecture-management-vocab/oslc-am-v2.1-cs01-part2-architecture-management-vocab.html" },
     ],
 
     relatedWork : [
@@ -132,8 +132,8 @@
           publisher:  "http://open-services.net",
       },
         "OSLCCore3": {
-            title:    "OSLC Core Overview v2.1",
-            href:     "http://docs.oasis-open.org/oslc-core/oslc-core/v2.1/oslc-core-v2.1-part1-overview.html",
+            title:    "OSLC Core Overview v3.0",
+            href:     "http://docs.oasis-open.org/oslc-core/oslc-core/v3.0/oslc-core-v3.0-part1-overview.html",
             status:   "Committee Specification",
             authors:  ["Steve Speicher", "Jim Amsden"],
             publisher:  "OASIS",
@@ -187,7 +187,7 @@ This specification defines a vocabulary and resource shapes for the OSLC Archite
 </section>
 
 <section id="amVocab">
-  <h2>Vocabulary Terms</h2>
+  <h2>Architecture Management Vocabulary Terms</h2>
     <p>Property value types that are not defined in the following sections, are defined in [[!OSLCCore3]].</p>
 
 <p>There are two OSLC AM defined resources: Resource and LinkType. OSLC AM defines a least common set of properties for resources, however service implementations are free to extend this set of properties. Clients <strong>MUST</strong> preserve properties it does not recognize when updating resources. AM Servers <strong>MAY</strong> ignore properties that it does not recognize. Additional properties may come from existing vocabularies (ie. Dublin Core, OWL). When additional properties do not come from a known vocabulary, it is recommended that they exist in their own unique namespace, and providers <strong>SHOULD NOT</strong> reuse namespaces defined in these specifications.</p>
@@ -223,8 +223,6 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 &lt;/rdf:RDF&gt;
 </pre>
 
-  <section id="vocabulary">
-  <h2>Vocabulary Terms</h2>
   <p>This specification defines a number of specific, commonly occurring vocabulary terms (OWL classes), properties and values. Servers may define additional classes and provide additional properties as needed.</p>
 
     <div title='RDF Vocabulary for OSLC Architecture Management Domain'
@@ -233,12 +231,11 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
         data-include-sync='true' 
         data-include-replace='true'
         data-include-format='html'></div>
-  </section>
 </section>
 
 <section id="resourceConstraints">
 <h2>Resource Constraints</h2>
-<p>Specifies the constraints for the Architecture Management resources. The resource properties are not limited to the ones defined
+<p>This section specifies the constraints for the Architecture Management resources. The resource properties are not limited to the ones defined
     in this specification, AM Servers may provide additional properties.
     It is recommended that any additional properties exist in their own unique
     namespace and not use the namespaces defined in these specifications.</p>
@@ -290,10 +287,16 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
  </tr>
  <tr>
   <td>01</td>
-  <td>07/06/2016</td>
+  <td>08/24/2018</td>
   <td>Jim Amsden</td>
-  <td>Initial CSPRD01</td>
+  <td>Committee Specification Draft for Public Review published</td>
  </tr>
+  <tr>
+    <td>01</td>
+    <td>09/10/2018</td>
+    <td>Jim Amsden</td>
+    <td>Committee Specification revision 01 published</td>
+  </tr>
 </table>
 </section>
 </body>
